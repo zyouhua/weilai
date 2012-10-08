@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clang", "clang\clang.vcxproj", "{82A08C58-54D8-41C1-96DE-60CE78F9B8BB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "startup", "startup\startup.vcxproj", "{681135F2-58EE-46F5-9CCA-FEEA88B3FBBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82A08C58-54D8-41C1-96DE-60CE78F9B8BB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{82A08C58-54D8-41C1-96DE-60CE78F9B8BB}.Debug|Win32.Build.0 = Debug|Win32
+		{82A08C58-54D8-41C1-96DE-60CE78F9B8BB}.Release|Win32.ActiveCfg = Release|Win32
+		{82A08C58-54D8-41C1-96DE-60CE78F9B8BB}.Release|Win32.Build.0 = Release|Win32
+		{681135F2-58EE-46F5-9CCA-FEEA88B3FBBA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{681135F2-58EE-46F5-9CCA-FEEA88B3FBBA}.Debug|Win32.Build.0 = Debug|Win32
+		{681135F2-58EE-46F5-9CCA-FEEA88B3FBBA}.Release|Win32.ActiveCfg = Release|Win32
+		{681135F2-58EE-46F5-9CCA-FEEA88B3FBBA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
