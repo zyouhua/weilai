@@ -7,7 +7,7 @@ namespace std {
 	class __singleton
 	{
 	public:
-		static __t& __instance()
+		static __t& _instance()
 		{
 			static __t t;
 			return t;
