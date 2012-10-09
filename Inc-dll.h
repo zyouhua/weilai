@@ -3,7 +3,7 @@
 
 #include "Inc.h"
 
-#ifdef EXPROT
+#ifdef EXPORT
 #define __funapi __declspec(dllexport)
 #else
 #define __funapi __declspec(dllimport)

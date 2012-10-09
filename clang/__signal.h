@@ -7,10 +7,10 @@
 extern "C" {
 #endif
 
-	void __signal_initialize(__signal * nSignal);
-	void __signal_push_back(__signal * nSignal, void * nData);
-	void __signal_remove(__signal * nSignal, void * nData);
-	void __signal_uninitialized(__signal * nSignal);
+	__funapi void __signal_initialize(__signal * nSignal);
+	__funapi void __signal_push_back(__signal * nSignal, void * nData);
+	__funapi void __signal_remove(__signal * nSignal, void * nData);
+	__funapi void __signal_uninitialized(__signal * nSignal);
 
 #ifdef __cplusplus
 }
