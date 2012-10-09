@@ -26,6 +26,16 @@ void __signal_push_back(__signal * nSignal, void * nData)
 	}
 }
 
+void __signal_run(__signal * nSignal, _run_signal_t nRunSignal)
+{
+	__signal_node * signalnode = nSignal->mHead;
+	for ( ; signalnode != NULL; signalnode = signalnode->mNext)
+	{
+		void * data = signalnode->mData;
+		nRunSignal(data);
+	}
+}
+
 void __signal_remove(__signal * nSignal, void * nData)
 {
 	__signal_node * prevnode = NULL;
@@ -38,7 +48,6 @@ void __signal_remove(__signal * nSignal, void * nData)
 			prevnode = signalnode;
 			continue;;
 		}
-		free(data);
 		data = NULL;
 		if (nSignal->mHead == nSignal->mTail)
 		{
@@ -76,7 +85,6 @@ void __signal_uninitialized(__signal * nSignal)
 	for ( ; signalnode != NULL; )
 	{
 		void * data = signalnode->mData;
-		free(data);
 		data = NULL;
 		tempnode = signalnode;
 		signalnode = signalnode->mNext;

@@ -22,6 +22,8 @@ struct __signal
 	__signal_node * mTail;
 } __pack;
 
+typedef void (*_run_signal_t)(void * nFun);
+
 #ifdef _MSC_VER
 #pragma pack(pop)
 #endif

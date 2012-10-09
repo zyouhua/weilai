@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clang-08", "clang-08\clang-08.vcproj", "{D666D4B9-35BA-4DFA-B1D1-E0FB3FFB386F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "startup-08", "startup-08\startup-08.vcproj", "{26FC7443-7EDC-404B-907E-24DD7F15D19A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D666D4B9-35BA-4DFA-B1D1-E0FB3FFB386F} = {D666D4B9-35BA-4DFA-B1D1-E0FB3FFB386F}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +18,10 @@ Global
 		{D666D4B9-35BA-4DFA-B1D1-E0FB3FFB386F}.Debug|Win32.Build.0 = Debug|Win32
 		{D666D4B9-35BA-4DFA-B1D1-E0FB3FFB386F}.Release|Win32.ActiveCfg = Release|Win32
 		{D666D4B9-35BA-4DFA-B1D1-E0FB3FFB386F}.Release|Win32.Build.0 = Release|Win32
+		{26FC7443-7EDC-404B-907E-24DD7F15D19A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{26FC7443-7EDC-404B-907E-24DD7F15D19A}.Debug|Win32.Build.0 = Debug|Win32
+		{26FC7443-7EDC-404B-907E-24DD7F15D19A}.Release|Win32.ActiveCfg = Release|Win32
+		{26FC7443-7EDC-404B-907E-24DD7F15D19A}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
