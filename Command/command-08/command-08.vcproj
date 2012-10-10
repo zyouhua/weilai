@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="utility"
-	ProjectGUID="{B3041EFA-5862-48AD-9D92-845A4CA55FF3}"
-	RootNamespace="utility"
+	Name="command-08"
+	ProjectGUID="{EA024BFF-AE9B-4B1B-BCD0-137A21BB1251}"
+	RootNamespace="command08"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
 	>
@@ -60,7 +60,6 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)\$(ProjectName).lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -149,6 +148,10 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath="..\Command.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Í·ÎÄ¼þ"
@@ -156,11 +159,7 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath="..\__singleton.hpp"
-				>
-			</File>
-			<File
-				RelativePath="..\Status_.hpp"
+				RelativePath="..\Command.hpp"
 				>
 			</File>
 		</Filter>

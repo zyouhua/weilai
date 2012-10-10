@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="utility"
-	ProjectGUID="{B3041EFA-5862-48AD-9D92-845A4CA55FF3}"
-	RootNamespace="utility"
+	Name="command.i-08"
+	ProjectGUID="{1207C15B-0BD4-4F73-AFAA-B1E56D1B04AA}"
+	RootNamespace="commandi08"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
 	>
@@ -60,7 +60,6 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)\$(ProjectName).lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -156,11 +155,11 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath="..\__singleton.hpp"
+				RelativePath="..\ICommand-.h"
 				>
 			</File>
 			<File
-				RelativePath="..\Status_.hpp"
+				RelativePath="..\ICommand.h"
 				>
 			</File>
 		</Filter>
