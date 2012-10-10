@@ -9,17 +9,17 @@ namespace std {
 
 	void SaveSingleton::_runSave()
 	{
-		mSaves.clear();
-	}
-
-	void SaveSingleton::_clearSave()
-	{
 		list<ISave *>::iterator it = mSaves.begin();
 		for ( ; it != mSaves.end(); it++ )
 		{
 			ISave * save = (*it);
 			save->mRunSave(save);
 		}
+	}
+
+	void SaveSingleton::_clearSave()
+	{
+		mSaves.clear();
 	}
 
 	SaveSingleton::SaveSingleton()

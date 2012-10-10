@@ -14,11 +14,13 @@
     <ClCompile Include="..\Dirty.cpp" />
     <ClCompile Include="..\GetUrl.cpp" />
     <ClCompile Include="..\Load.cpp" />
+    <ClCompile Include="..\Save.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Dirty.hpp" />
     <ClInclude Include="..\GetUrl.hpp" />
     <ClInclude Include="..\Load.hpp" />
+    <ClInclude Include="..\Save.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\save.i-10\save.i-10.vcxproj">
