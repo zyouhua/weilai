@@ -8,6 +8,7 @@ namespace std {
 	{
 	public:
 		string _getUrl();
+
 	protected:
 		void _setUrl(string nUrl);
 	public:

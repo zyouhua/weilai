@@ -11,16 +11,20 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Create.cpp" />
     <ClCompile Include="..\Dirty.cpp" />
     <ClCompile Include="..\GetUrl.cpp" />
     <ClCompile Include="..\Load.cpp" />
     <ClCompile Include="..\Save.cpp" />
+    <ClCompile Include="..\UrlDel.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Create.hpp" />
     <ClInclude Include="..\Dirty.hpp" />
     <ClInclude Include="..\GetUrl.hpp" />
     <ClInclude Include="..\Load.hpp" />
     <ClInclude Include="..\Save.hpp" />
+    <ClInclude Include="..\UrlDel.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\save.i-10\save.i-10.vcxproj">

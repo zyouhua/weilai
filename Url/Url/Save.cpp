@@ -8,7 +8,7 @@ namespace std {
 		{
 			m_tRunSave();
 		}
-		Dirty::_saveDirty();
+		__super::_saveDirty();
 	}
 
 	Save::Save()
