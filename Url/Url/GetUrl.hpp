@@ -7,6 +7,7 @@ namespace std {
 	class GetUrl
 	{
 	public:
+		virtual void _setUrl(string nUrl, string nName);
 		string _getUrl();
 
 	protected:
