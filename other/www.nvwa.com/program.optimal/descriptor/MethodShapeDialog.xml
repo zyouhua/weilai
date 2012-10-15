@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<form startPosition="CenterScreen"
+      icon = ""
+      caption="创建方法"
+      borderStyle="FixedToolWindow">
+
+  <size width="275" height="230" />
+
+  <controls>
+
+    <__t virstream="groupBox"
+         controlName="groupbox1"
+         text="类型">
+
+      <point x="12" y="115" />
+
+      <size width="248" height="40" />
+      
+      <controls>
+
+        <__t virstream="radioButton"
+             controlName="radioButton1"
+             text="normal">
+
+          <point x="5" y="15" />
+
+          <size width="75" height="20" />
+          
+        </__t>
+
+        <__t virstream="radioButton"
+             controlName="radioButton2"
+             text="virtual">
+
+          <point x="80" y="15" />
+
+          <size width="75" height="20" />
+
+        </__t>
+
+        <__t virstream="radioButton"
+             controlName="radioButton3"
+             text="override">
+
+          <point x="165" y="15" />
+
+          <size width="80" height="20" />
+
+        </__t>
+        
+      </controls>
+      
+    </__t>
+
+    <__t virstream="groupBox"
+         controlName="groupbox2"
+         text="权限">
+
+      <point x="12" y="63" />
+
+      <size width="248" height="40" />
+
+      <controls>
+
+        <__t virstream="radioButton"
+             controlName="radioButton1"
+             text="public">
+
+          <point x="5" y="15" />
+
+          <size width="75" height="20" />
+
+        </__t>
+
+        <__t virstream="radioButton"
+             controlName="radioButton2"
+             text="private">
+
+          <point x="80" y="15" />
+
+          <size width="75" height="20" />
+
+        </__t>
+
+        <__t virstream="radioButton"
+             controlName="radioButton3"
+             text="protected">
+
+          <point x="165" y="15" />
+
+          <size width="80" height="20" />
+
+        </__t>
+
+      </controls>
+
+    </__t>
+    
+    <__t virstream="button"
+         controlName="cancel"
+         text="取消"
+         onClick="url://www.nvwa.com/library/program\program.optimal:program.optimal.MethodShapeCancelCommand">
+
+      <point x="148" y="168" />
+
+      <size width="75" height="23" />
+
+    </__t>
+
+    <__t virstream="button"
+         controlName="ok"
+         text="确定"
+         onClick="url://www.nvwa.com/library/program\program.optimal:program.optimal.ClassShapeOkCommand">
+
+      <point x="40" y="168" />
+
+      <size width="75" height="23" />
+
+    </__t>
+
+    <__t virstream="textLabel"
+         controlName="textLabel1"
+         text="方法名：">
+
+      <point x="12" y="10" />
+      <size width="65" height="18" />
+
+    </__t>
+
+    <__t virstream="textBox"
+         controlName="className"
+         textChangedCommand="url://www.nvwa.com/library/program\program.optimal:program.optimal.ClassShapeTextChangedCommand">
+
+      <point x="12" y="31" />
+      
+      <size width="248" height="21" />
+
+    </__t>
+
+  </controls>
+
+</form>

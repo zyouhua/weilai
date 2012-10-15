@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8B38F69-D0F5-4ECE-9F54-7C91BB971DFB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>window.optimal</RootNamespace>
+    <AssemblyName>window.optimal</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\home\www.nvwa.com\library\os\^arc^window.optimal\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin\home\www.nvwa.com\library\os\^arc^window.optimal\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ICSharpCode.AvalonEdit\ICSharpCode.AvalonEdit.csproj">
+      <Project>{6C55B776-26D4-4DB3-A6AB-87E783B2F3D1}</Project>
+      <Name>ICSharpCode.AvalonEdit</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\platform.include\platform.include.csproj">
+      <Project>{54AE4F94-BACD-4690-A47B-0059F2748715}</Project>
+      <Name>platform.include</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\window.include\window.include.csproj">
+      <Project>{C13EDDF5-7085-4088-AEF8-5FA6CF0C8D84}</Project>
+      <Name>window.include</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\WinFormsUI\WinFormsUI.csproj">
+      <Project>{C75532C4-765B-418E-B09B-46D36B2ABDB1}</Project>
+      <Name>WinFormsUI</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Button\Button.cs" />
+    <Compile Include="Canvas\Canvas.cs" />
+    <Compile Include="Canvas\CanvasControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Canvas\CanvasCore.cs" />
+    <Compile Include="Canvas\Descriptor\ImagePos_.cs" />
+    <Compile Include="Canvas\Descriptor\LabelStream.cs" />
+    <Compile Include="Canvas\Descriptor\LineStream.cs" />
+    <Compile Include="Canvas\Descriptor\RectStream.cs" />
+    <Compile Include="Canvas\Descriptor\ShapeDescriptorManager.cs" />
+    <Compile Include="Canvas\Descriptor\ShapeDescriptorSingleton.cs" />
+    <Compile Include="Canvas\Shape\IShape.cs" />
+    <Compile Include="Canvas\Shape\LabelShape.cs" />
+    <Compile Include="Canvas\Shape\LineShape.cs" />
+    <Compile Include="Canvas\Shape\RectShape.cs" />
+    <Compile Include="Canvas\Utility\ScreenSingleton.cs" />
+    <Compile Include="ComboBox\ComboBox.cs" />
+    <Compile Include="ComboBox\ComboBoxItem.cs" />
+    <Compile Include="Dock\DockContent.cs" />
+    <Compile Include="Dock\DockFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock\DockPad.cs" />
+    <Compile Include="Dock\DockPanel.cs" />
+    <Compile Include="Dock\DockTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\Form.cs" />
+    <Compile Include="Graphics\Graphicsos.cs" />
+    <Compile Include="Graphics\PenCapProvider.cs" />
+    <Compile Include="GroupBox\GroupBox.cs" />
+    <Compile Include="ImageSingleton\ImageSingleton.cs" />
+    <Compile Include="ListView\ListItemWidget.cs" />
+    <Compile Include="ListView\ListSubItem.cs" />
+    <Compile Include="ListView\ListView.cs" />
+    <Compile Include="Math\Font\FONT.cs" />
+    <Compile Include="Math\RGB\RGB.cs" />
+    <Compile Include="MenuStrip\ContextMenuItem.cs" />
+    <Compile Include="MenuStrip\ContextMenuStrip.cs" />
+    <Compile Include="MenuStrip\MenuItem.cs" />
+    <Compile Include="MenuStrip\MenuStrip.cs" />
+    <Compile Include="Canvas\Shape\MoveState_.cs" />
+    <Compile Include="Panel\Panel.cs" />
+    <Compile Include="Plugin\Plugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Canvas\Shape\PullState_.cs" />
+    <Compile Include="RadioButton\RadioButton.cs" />
+    <Compile Include="RadioButton\RadioButtonEx.cs" />
+    <Compile Include="SideBar\MouseWheelHandler.cs" />
+    <Compile Include="SideBar\SideBar.cs" />
+    <Compile Include="SideBar\SideBarControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SideBar\SideBarUrl.cs" />
+    <Compile Include="SideBar\SideTab.cs" />
+    <Compile Include="SideBar\SideTabContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SideBar\SideTabItem.cs" />
+    <Compile Include="SideBar\SideTabItemStatus_.cs" />
+    <Compile Include="SideBar\SideTabStatus_.cs" />
+    <Compile Include="StatusBar\StatusBar.cs" />
+    <Compile Include="TextArea\Caret.cs" />
+    <Compile Include="TextArea\TextArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextBox\TextBox.cs" />
+    <Compile Include="TextEdit\TextEditEx.cs" />
+    <Compile Include="TextEdit\TextEdit.cs" />
+    <Compile Include="TextLabel\TextLabel.cs" />
+    <Compile Include="ToolStrip\IToolStripItem.cs" />
+    <Compile Include="ToolStrip\ToolItem.cs" />
+    <Compile Include="ToolStrip\ToolPanel.cs" />
+    <Compile Include="ToolStrip\ToolStrip.cs" />
+    <Compile Include="ToolStrip\ToolStripComboBox.cs" />
+    <Compile Include="ToolStrip\ToolStripComboBoxItem.cs" />
+    <Compile Include="ToolStrip\ToolStripItem.cs" />
+    <Compile Include="ToolStrip\ToolStripItemAdapt.cs" />
+    <Compile Include="TreeView\TreeNodeWidget.cs" />
+    <Compile Include="TreeView\TreeView.cs" />
+    <Compile Include="Window\VirstreamRepeatException.cs" />
+    <Compile Include="Window\Window.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="%24assembly.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="%24descriptor.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\selectImage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\shapeDescriptorSingleton.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="diagram.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

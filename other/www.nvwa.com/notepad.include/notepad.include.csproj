@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C36F7382-B037-415E-9D6A-D57C7F2D1799}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>notepad.include</RootNamespace>
+    <AssemblyName>notepad.include</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\home\www.nvwa.com\include\notepad\^arc^notepad.include\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin\home\www.nvwa.com\include\notepad\^arc^notepad.include\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\platform.include\platform.include.csproj">
+      <Project>{54AE4F94-BACD-4690-A47B-0059F2748715}</Project>
+      <Name>platform.include</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\window.include\window.include.csproj">
+      <Project>{C13EDDF5-7085-4088-AEF8-5FA6CF0C8D84}</Project>
+      <Name>window.include</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Content\Content.cs" />
+    <Compile Include="Content\ContentAll.cs" />
+    <Compile Include="Content\ContentDockUrl.cs" />
+    <Compile Include="Content\ContentTreeNode.cs" />
+    <Compile Include="Content\IContent.cs" />
+    <Compile Include="Diagram\CanvasDockWidget.cs" />
+    <Compile Include="Diagram\DiagramAll.cs" />
+    <Compile Include="Diagram\DiagramDockUrl.cs" />
+    <Compile Include="Diagram\ICanvasDockWidget.cs" />
+    <Compile Include="NewFile\NewFileArg.cs" />
+    <Compile Include="NewProject\NewProjectArg.cs" />
+    <Compile Include="Plugin\Plugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SideBar\SideBarSingleton.cs" />
+    <Compile Include="TextContent\ITextDockWidget.cs" />
+    <Compile Include="TextContent\TextContentAll.cs" />
+    <Compile Include="TextContent\TextContentDockUrl.cs" />
+    <Compile Include="TextContent\TextDockWidget.cs" />
+    <Compile Include="Diagram\DiagramAllStream.cs" />
+    <Compile Include="TextContent\TextContentAllStream.cs" />
+    <Compile Include="Workbench\ActiveContentValidator.cs" />
+    <Compile Include="Workbench\ContentWidgetValidator.cs" />
+    <Compile Include="Workbench\IWorkbench.cs" />
+    <Compile Include="Workbench\WorkbenchSingleton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="%24assembly.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="%24descriptor.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="diagram.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

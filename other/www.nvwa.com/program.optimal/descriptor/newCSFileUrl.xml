@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<newFileUrl>
+
+  <newFileNodes>
+
+    <__t nodeName="c#"
+         nodeImage="url://www.nvwa.com/library/program\program.optimal/descriptor*iconCSProject.png">
+
+      <newFileNodeCommands>
+
+        <__t commandName="新建cs文件"
+             commandUrl="url://www.nvwa.com/library/program\program.optimal:program.optimal.NewCSFileCommand"
+             imageUrl="url://www.nvwa.com/library/program\program.optimal/descriptor*iconCSFile.png" />
+
+      </newFileNodeCommands>
+
+      <newFileNodes>
+
+        <__t nodeName="代码"
+             nodeImage="url://www.nvwa.com/library/program\program.optimal/descriptor*iconCSFile.png">
+
+          <newFileNodeCommands>
+
+            <__t commandName="新建cs文件"
+                 commandUrl="url://www.nvwa.com/library/program\program.optimal:program.optimal.NewCSFileCommand"
+                 imageUrl="url://www.nvwa.com/library/program\program.optimal/descriptor*iconCSFile.png" />
+
+          </newFileNodeCommands>
+
+          <newFileNodes />
+
+        </__t>
+
+        <__t nodeName="数据"
+             nodeImage="url://www.nvwa.com/library/program\program.optimal/descriptor*iconXml.png">
+
+          <newFileNodeCommands>
+
+            <__t commandName="新建xml文件"
+                 commandUrl="url://www.nvwa.com/library/program\program.optimal:program.optimal.CSLibraryProject"
+                 imageUrl="url://www.nvwa.com/library/program\program.optimal/descriptor*iconXml.png" />
+
+          </newFileNodeCommands>
+
+          <newFileNodes />
+
+        </__t>
+
+      </newFileNodes>
+
+    </__t>
+
+  </newFileNodes>
+
+</newFileUrl>

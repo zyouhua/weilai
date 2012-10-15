@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C13EDDF5-7085-4088-AEF8-5FA6CF0C8D84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>window.include</RootNamespace>
+    <AssemblyName>window.include</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\home\www.nvwa.com\include\os\^arc^window.include\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin\home\www.nvwa.com\include\os\^arc^window.include\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\platform.include\platform.include.csproj">
+      <Project>{54AE4F94-BACD-4690-A47B-0059F2748715}</Project>
+      <Name>platform.include</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Button\IButton.cs" />
+    <Compile Include="Canvas\Creater\Action_.cs" />
+    <Compile Include="Canvas\Creater\Creater.cs" />
+    <Compile Include="Canvas\Creater\LabelCreater.cs" />
+    <Compile Include="Canvas\Creater\LineCreater.cs" />
+    <Compile Include="Canvas\ICanvas.cs" />
+    <Compile Include="Canvas\ILabel.cs" />
+    <Compile Include="Canvas\ILine.cs" />
+    <Compile Include="Canvas\IRect.cs" />
+    <Compile Include="Canvas\IStyle.cs" />
+    <Compile Include="Canvas\Label.cs" />
+    <Compile Include="Canvas\Line.cs" />
+    <Compile Include="ComboBox\IComboBox.cs" />
+    <Compile Include="ContextMenuStrip\IContextMenuStrip.cs" />
+    <Compile Include="Dock\IDockContent.cs" />
+    <Compile Include="Dock\IDockControl.cs" />
+    <Compile Include="Dock\IDockPad.cs" />
+    <Compile Include="Dock\IDockPanel.cs" />
+    <Compile Include="Dock\IDockUrl.cs" />
+    <Compile Include="Dock\IDockWidget.cs" />
+    <Compile Include="Dock\_GetWidgetSlot.cs" />
+    <Compile Include="Form\IForm.cs" />
+    <Compile Include="ListView\IListContain.cs" />
+    <Compile Include="ListView\IListItem.cs" />
+    <Compile Include="ListView\IListView.cs" />
+    <Compile Include="ListView\ListItem.cs" />
+    <Compile Include="ListView\_SetListItemSlot.cs" />
+    <Compile Include="Panel\IPanel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadioButton\RadioButtonCheckedChangedArg.cs" />
+    <Compile Include="Canvas\Rect.cs" />
+    <Compile Include="SideBar\ISideBar.cs" />
+    <Compile Include="SideBar\SideItem.cs" />
+    <Compile Include="TextBox\ITextBox.cs" />
+    <Compile Include="TextEdit\ITextEdit.cs" />
+    <Compile Include="ToolStrip\IToolPanel.cs" />
+    <Compile Include="TreeView\TreeNodeStream.cs" />
+    <Compile Include="TreeView\ITreeContain.cs" />
+    <Compile Include="TreeView\ITreeNode.cs" />
+    <Compile Include="TreeView\ITreeView.cs" />
+    <Compile Include="TreeView\TreeNode.cs" />
+    <Compile Include="TreeView\TreeNodeMouseClickEventParams.cs" />
+    <Compile Include="TreeView\_SetTreeNodeSlot.cs" />
+    <Compile Include="Window\Contain\Contain.cs" />
+    <Compile Include="Window\Contain\IContain.cs" />
+    <Compile Include="Window\Contain\MultiContain.cs" />
+    <Compile Include="Window\Contain\Widgets.cs" />
+    <Compile Include="Window\ControlPathException.cs" />
+    <Compile Include="Window\Control\Control.cs" />
+    <Compile Include="Window\Control\IControl.cs" />
+    <Compile Include="Window\Control\MultiControl.cs" />
+    <Compile Include="Window\IWindow.cs" />
+    <Compile Include="Window\Widget\IWidget.cs" />
+    <Compile Include="Window\Widget\Widget.cs" />
+    <Compile Include="Window\WindowSingleton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="%24assembly.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="%24descriptor.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="diagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

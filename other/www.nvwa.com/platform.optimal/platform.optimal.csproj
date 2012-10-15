@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F0E9206-3C3A-4DDE-B606-6A22A7E60740}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>platform.optimal</RootNamespace>
+    <AssemblyName>platform.optimal</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\system\platform\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin\system\platform\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\platform.include\platform.include.csproj">
+      <Project>{54AE4F94-BACD-4690-A47B-0059F2748715}</Project>
+      <Name>platform.include</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Binding\Binding.cs" />
+    <Compile Include="Binding\BindingManager.cs" />
+    <Compile Include="Binding\BindingSingleton.cs" />
+    <Compile Include="Launch\Launch.cs" />
+    <Compile Include="Platform\Culture\Culture.cs" />
+    <Compile Include="Platform\Platform.cs" />
+    <Compile Include="Platform\Process\Processos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Platform\Setting\SettingSingleton.cs" />
+    <Compile Include="Platform\Thread\Threados.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialize\Bin\BinISerialize.cs" />
+    <Compile Include="Serialize\Bin\BinOSerialize.cs" />
+    <Compile Include="Serialize\Text\TextISerialize.cs" />
+    <Compile Include="Serialize\Text\TextOSerialize.cs" />
+    <Compile Include="Serialize\Xml\XmlISerialize.cs" />
+    <Compile Include="Serialize\Xml\XmlOSerialize.cs" />
+    <Compile Include="Url\Assembly\AssemblyDescriptor.cs" />
+    <Compile Include="Url\Assembly\AssemblyUdl.cs" />
+    <Compile Include="Url\Assembly\AssemblyUfl.cs" />
+    <Compile Include="Url\Icon\IconUfl.cs" />
+    <Compile Include="Url\Png\PngUfl.cs" />
+    <Compile Include="Url\UrlParser\DirUrl.cs" />
+    <Compile Include="Url\UrlParser\UidSingleton\Rid.cs" />
+    <Compile Include="Url\UrlParser\UidSingleton\RidOverlapException.cs" />
+    <Compile Include="Url\UrlParser\UidSingleton\Uid.cs" />
+    <Compile Include="Url\UrlParser\UidSingleton\UidOverlapException.cs" />
+    <Compile Include="Url\UrlParser\UidSingleton\UidSingleton.cs" />
+    <Compile Include="Url\UrlParser\UrlParser.cs" />
+    <Compile Include="Url\UrlParser\UrlStruct.cs" />
+    <Compile Include="Url\UrlParser\UrlType_.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="diagram.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

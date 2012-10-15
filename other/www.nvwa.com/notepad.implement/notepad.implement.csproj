@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{752DE766-18F5-4470-BB04-8CE5E65BB210}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>notepad.implement</RootNamespace>
+    <AssemblyName>notepad.implement</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\home\www.nvwa.com\implement\notepad\^arc^notepad.implement\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin\home\www.nvwa.com\implement\notepad\^arc^notepad.implement\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\notepad.include\notepad.include.csproj">
+      <Project>{C36F7382-B037-415E-9D6A-D57C7F2D1799}</Project>
+      <Name>notepad.include</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\platform.include\platform.include.csproj">
+      <Project>{54AE4F94-BACD-4690-A47B-0059F2748715}</Project>
+      <Name>platform.include</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\window.include\window.include.csproj">
+      <Project>{C13EDDF5-7085-4088-AEF8-5FA6CF0C8D84}</Project>
+      <Name>window.include</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Command\Dock\DBClickDockTab.cs" />
+    <Compile Include="Command\File\CloseWorkbench.cs" />
+    <Compile Include="Command\File\NewProjectCommand.cs" />
+    <Compile Include="Command\File\OpenFileCommand.cs" />
+    <Compile Include="Command\File\SaveAllCommand.cs" />
+    <Compile Include="Command\File\SaveFileCommand.cs" />
+    <Compile Include="Command\SideBar\SideBarInitCommand.cs" />
+    <Compile Include="Command\View\OpenSolutionPad.cs" />
+    <Compile Include="Command\View\OpenToolBoxPad.cs" />
+    <Compile Include="NewProject\Command\NewProjectCancelCommand.cs" />
+    <Compile Include="NewProject\Command\NewProjectOkCommand.cs" />
+    <Compile Include="NewProject\Command\TreeViewInitCommand.cs" />
+    <Compile Include="NewProject\NewProjectNode.cs" />
+    <Compile Include="NewProject\NewProjectNodeCommand.cs" />
+    <Compile Include="NewProject\NewProjectUrl.cs" />
+    <Compile Include="NotepadApp\NotepadApp.cs" />
+    <Compile Include="OpenFile\Command\OpenFileCancelCommand.cs" />
+    <Compile Include="OpenFile\Command\OpenFileDialogListViewItemActivateCommand.cs" />
+    <Compile Include="OpenFile\Command\OpenFileDialogListViewLoadCommand.cs" />
+    <Compile Include="OpenFile\Command\OpenFileDialogSelectedIndexChangedCommand.cs" />
+    <Compile Include="OpenFile\Command\OpenFileOkCommand.cs" />
+    <Compile Include="OpenFile\OpenFileArcListItem.cs" />
+    <Compile Include="OpenFile\OpenFileDirListItem.cs" />
+    <Compile Include="OpenFile\OpenFileFileListItem.cs" />
+    <Compile Include="OpenFile\OpenFileUrlListItem.cs" />
+    <Compile Include="Plugin\Plugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Workbench\Workbench.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="%24assembly.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="%24descriptor.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\bindingManager.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\formDescriptor.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="descriptor\iconArchive.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconClosedFolder.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconDebugStart.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconExit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconFile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconNewProject.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconNotepad.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconOpenFile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconSave.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconSaveAll.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconSolution.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconSolutionPad.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconToolBox.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\iconUrl.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\newProjectForm.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\newProjectUrl.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="descriptor\openFileDialog.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\sideBar.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="descriptor\txtFile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="diagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bindingManager>
+  
+  <bindings>
+    
+    <__t name="cs"
+         class="notepad.include.TextContentDockUrl"
+         image="url://www.nvwa.com/library/program\program.optimal/descriptor*iconCsFile.png">
+      
+      <uid id="program.optimal.bindingManager.cs"
+           isInclude="false"
+           include="url://www.nvwa.com/include/notepad\notepad.include"
+           optimal=""
+           forceUsed="false"/>
+      
+    </__t>
+
+    <__t name="cpp"
+     class="notepad.include.TextContentDockUrl"
+     image="url://www.nvwa.com/library/program\program.optimal/descriptor*iconCppFile.png">
+
+      <uid id="program.optimal.bindingManager.cpp"
+           isInclude="false"
+           include="url://www.nvwa.com/include/notepad\notepad.include"
+           optimal=""
+           forceUsed="false"/>
+
+    </__t>
+
+    <__t name="zyouhua@gmail.com:nvwaproject"
+         class="program.optimal.Project"
+         image="url://www.nvwa.com/library/program\program.optimal/descriptor*iconNvwaProject.png">
+
+      <uid id="program.optimal.bindingManager.nvwaproject"
+           isInclude="true"
+           include="url://www.nvwa.com/include/program\program.include"
+           optimal="url://www.nvwa.com/library/program\program.optimal"
+           forceUsed="false"/>
+
+    </__t>
+
+  </bindings>
+  
+</bindingManager>
