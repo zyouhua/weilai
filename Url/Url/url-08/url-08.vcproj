@@ -169,6 +169,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\Url.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\UrlDel.cpp"
 				>
 			</File>
@@ -196,6 +200,10 @@
 			</File>
 			<File
 				RelativePath="..\Save.hpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Url.hpp"
 				>
 			</File>
 			<File

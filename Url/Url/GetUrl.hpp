@@ -7,11 +7,11 @@ namespace std {
 	class GetUrl
 	{
 	public:
-		virtual void _setUrl(string nUrl, string nName);
-		string _getUrl();
+		const string _getUrl();
 
 	protected:
-		void _setUrl(string nUrl);
+		virtual const string _getUrl(const char * nUrl, const char * nName) = 0;
+		void _setUrl(const char * nUrl);
 	public:
 		GetUrl();
 		virtual ~GetUrl();

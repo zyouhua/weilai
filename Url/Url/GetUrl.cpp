@@ -2,12 +2,12 @@
 
 namespace std {
 
-	string GetUrl::_getUrl()
+	const string GetUrl::_getUrl()
 	{
 		return mUrl;
 	}
 
-	void GetUrl::_setUrl(string nUrl)
+	void GetUrl::_setUrl(const char * nUrl)
 	{
 		mUrl = nUrl;
 	}

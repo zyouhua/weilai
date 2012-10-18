@@ -7,17 +7,16 @@ namespace std {
 	class Dirty
 	{
 	public:
-		void _runDirty();
-
 		signal<bool ()> m_tIsDirty;
 		virtual bool _isDirty();
+		void _runDirty();
 
 	protected:
 		void _saveDirty();
 
 	public:
 		Dirty();
-		~Dirty();
+		virtual ~Dirty();
 
 	private:
 		bool mIsDirtied;

@@ -5,12 +5,14 @@
 
 namespace std {
 
-	class Create : public GetUrl, public Dirty
+	class Create : public virtual GetUrl, public virtual Dirty
 	{
 	public:
-		virtual void _runCreate(string nUrl);
+		void _runCreate(const char * nUrl, const char * nName);
+		virtual void _runCreate(const char * nUrl);
 
-		virtual void _runCreate(string nUrl, string nName);
+		Create();
+		virtual ~Create();
 	};
 
 }

@@ -5,13 +5,18 @@
 
 namespace std {
 
-	class Load : public GetUrl, public Dirty
+	class Load : public virtual GetUrl, public virtual Dirty
 	{
 	public:
-		virtual void _runLoad(string nUrl);
+		void _runLoad(const char * nUrl, const char * nName);
+		virtual void _runLoad(const char * nUrl);
 
 		signal<void ()> m_tLoadInit;
+	protected:
 		virtual void _loadInit();
+	public:
+		Load();
+		virtual ~Load();
 	};
 
 }

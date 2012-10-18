@@ -1,15 +1,17 @@
 #pragma once
 
-#include "GetUrl.hpp"
-#include "Dirty.hpp"
+#include "../../Incpp.hpp"
 
 namespace std {
 
-	class UrlDel : public GetUrl, public Dirty
+	class UrlDel
 	{
 	public:
-		virtual void _beforeDelete();
+		signal<void ()> m_tRunDel;
 		virtual void _runDelete();
+
+		UrlDel();
+		virtual ~UrlDel();
 	};
 
 }
