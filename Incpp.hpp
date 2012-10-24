@@ -9,6 +9,6 @@
 #include <boost/noncopyable.hpp>
 #include <string>
 
-typedef std::string __s;
+typedef std::wstring __s;
 
 using namespace boost;

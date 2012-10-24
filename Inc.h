@@ -23,6 +23,8 @@ typedef double __d;
 
 typedef float __f;
 
+typedef bool __b;
+
 #define NULL 0
 
 #endif // Inc_h__

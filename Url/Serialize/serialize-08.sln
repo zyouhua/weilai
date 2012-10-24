@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "serialize-08", "serialize-08\serialize-08.vcproj", "{17C6BBEB-7633-466B-AC92-5E237E538827}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "serialize.i-08", "serialize.i-08\serialize.i-08.vcproj", "{45768A04-CAAC-4DBF-8419-A1D33D805F95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17C6BBEB-7633-466B-AC92-5E237E538827}.Debug|Win32.ActiveCfg = Debug|Win32
+		{17C6BBEB-7633-466B-AC92-5E237E538827}.Debug|Win32.Build.0 = Debug|Win32
+		{17C6BBEB-7633-466B-AC92-5E237E538827}.Release|Win32.ActiveCfg = Release|Win32
+		{17C6BBEB-7633-466B-AC92-5E237E538827}.Release|Win32.Build.0 = Release|Win32
+		{45768A04-CAAC-4DBF-8419-A1D33D805F95}.Debug|Win32.ActiveCfg = Debug|Win32
+		{45768A04-CAAC-4DBF-8419-A1D33D805F95}.Debug|Win32.Build.0 = Debug|Win32
+		{45768A04-CAAC-4DBF-8419-A1D33D805F95}.Release|Win32.ActiveCfg = Release|Win32
+		{45768A04-CAAC-4DBF-8419-A1D33D805F95}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
