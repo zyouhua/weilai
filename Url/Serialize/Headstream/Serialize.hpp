@@ -3,10 +3,6 @@
 #include "../Key/KeyValue.hpp"
 #include "SerializeIO_ .hpp"
 
-#include <string>
-#include <vector>
-#include <map>
-
 namespace std {
 
 	class Serialize
@@ -33,7 +29,7 @@ namespace std {
 		//__s
 		virtual void _serialize(__s& nValue, const wchar_t * nName, const wchar_t * nOptimal = L"") = 0;
 		//__float
-		virtual void _serialize(__f& nValue, const wchar_t * nName, float nOptimal = 0.) = 0;
+		virtual void _serialize(__f& nValue, const wchar_t * nName, __f nOptimal = 0.) = 0;
 		//__double
 		virtual void _serialize(__d& nValue, const wchar_t * nName, __d nOptimal = 0.) = 0;
 		//__t

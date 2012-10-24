@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headstream">
+      <UniqueIdentifier>{c23896e1-148e-42fa-b973-7dd7defc0796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KeyValue">
+      <UniqueIdentifier>{40f31642-2983-4b1b-9c8b-8d472cd2ceee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Headstream\Serialize.hpp">
+      <Filter>Headstream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headstream\SerializeIO_ .hpp">
+      <Filter>Headstream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headstream\Stream.hpp">
+      <Filter>Headstream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Key\KeyDouble.hpp">
+      <Filter>KeyValue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Key\KeyFloat.hpp">
+      <Filter>KeyValue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Key\KeyI8.hpp">
+      <Filter>KeyValue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Key\KeyI16.hpp">
+      <Filter>KeyValue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Key\KeyI32.hpp">
+      <Filter>KeyValue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Key\KeyI64.hpp">
+      <Filter>KeyValue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Key\KeyStr.hpp">
+      <Filter>KeyValue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Key\KeyU8.hpp">
+      <Filter>KeyValue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Key\KeyU16.hpp">
+      <Filter>KeyValue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Key\KeyU32.hpp">
+      <Filter>KeyValue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Key\KeyU64.hpp">
+      <Filter>KeyValue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Key\KeyValue.hpp">
+      <Filter>KeyValue</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

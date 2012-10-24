@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "serialize-10", "serialize-10\serialize-10.vcxproj", "{DDC9978F-C1DF-47A1-AB8D-2EE1C0E2EC17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDC9978F-C1DF-47A1-AB8D-2EE1C0E2EC17}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DDC9978F-C1DF-47A1-AB8D-2EE1C0E2EC17}.Debug|Win32.Build.0 = Debug|Win32
+		{DDC9978F-C1DF-47A1-AB8D-2EE1C0E2EC17}.Release|Win32.ActiveCfg = Release|Win32
+		{DDC9978F-C1DF-47A1-AB8D-2EE1C0E2EC17}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

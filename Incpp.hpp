@@ -8,6 +8,9 @@
 #include <boost/tuple/tuple.hpp>
 #include <boost/noncopyable.hpp>
 #include <string>
+#include <vector>
+#include <list>
+#include <map>
 
 typedef std::wstring __s;
 
