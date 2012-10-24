@@ -2,7 +2,7 @@
 
 #include "Inc.h"
 
-#include <boost/shared_ptr.hpp>
+#include <boost/smart_ptr.hpp>
 #include <boost/signals.hpp>
 #include <boost/function.hpp>
 #include <boost/tuple/tuple.hpp>
