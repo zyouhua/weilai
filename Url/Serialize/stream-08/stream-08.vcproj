@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="serialize-08"
-	ProjectGUID="{17C6BBEB-7633-466B-AC92-5E237E538827}"
-	RootNamespace="serialize08"
+	Name="stream-08"
+	ProjectGUID="{08C0D113-F601-40BF-9822-5441EEEC31E2}"
+	RootNamespace="stream08"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
 	>
@@ -144,30 +144,70 @@
 	</References>
 	<Files>
 		<Filter
-			Name="Xml"
+			Name="Headstream"
 			>
 			<File
-				RelativePath="..\Serialize\rapidxml.hpp"
+				RelativePath="..\Headstream\Serialize.hpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Serialize\rapidxml_iterators.hpp"
+				RelativePath="..\Headstream\SerializeIO_ .hpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Serialize\rapidxml_print.hpp"
+				RelativePath="..\Headstream\Stream.hpp"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Key"
+			>
+			<File
+				RelativePath="..\Key\KeyDouble.hpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Serialize\rapidxml_utils.hpp"
+				RelativePath="..\Key\KeyFloat.hpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Serialize\XmlReader.cpp"
+				RelativePath="..\Key\KeyI16.hpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Serialize\XmlReader.hpp"
+				RelativePath="..\Key\KeyI32.hpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Key\KeyI64.hpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Key\KeyI8.hpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Key\KeyStr.hpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Key\KeyU16.hpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Key\KeyU32.hpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Key\KeyU64.hpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Key\KeyU8.hpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Key\KeyValue.hpp"
 				>
 			</File>
 		</Filter>

@@ -8,8 +8,8 @@ namespace std {
 	class Serialize
 	{
 	public:
-		//__bool
-		virtual void _serialize(bool& nValue, const wchar_t * nName, bool nOptimal = false) = 0;
+		//__b
+		virtual void _serialize(__b& nValue, const wchar_t * nName, __b nOptimal = false) = 0;
 		//__i8
 		virtual void _serialize(__i8& nValue, const wchar_t * nName, __i8 nOptimal = -1) = 0;
 		//__u8
